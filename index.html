@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineering...</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#040507]">
+    <header class="fixed w-full top-0 left-0 bg-[#040507] shadow z-50">
+      <nav
+        class="max-w-[1280px] mx-auto flex justify-between items-center px-6 py-4"
+      >
+        <!-- Logo -->
+        <a href="/">
+          <div class="flex items-center gap-2 cursor-pointer">
+            <img class="w-[35px] rounded-full" src="/img/naim.jpg" alt="logo" />
+            <span class="text-lg font-semibold text-white">Naim Hossain</span>
+          </div></a
+        >
+
+        <!-- Menu (Desktop) -->
+        <div class="hidden md:block">
+          <ul class="flex gap-6 text-white font-medium">
+            <li>
+              <a class="hover:text-[#8DDF22] transition" href="/">Home</a>
+            </li>
+            <li>
+              <a class="hover:text-[#8DDF22] transition" href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-[#8DDF22] transition" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Button (Desktop) -->
+        <div class="hidden md:block">
+          <button
+            class="bg-[#8DDF22] text-black font-semibold px-5 py-2 rounded-lg shadow hover:bg-[#76c91c] transition"
+          >
+            Contact Me
+          </button>
+        </div>
+
+        <!-- Hamburger (Mobile) -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-white focus:outline-none">
+            <svg
+              class="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-[#040507]">
+        <ul class="flex flex-col gap-4 text-white font-medium">
+          <li><a class="hover:text-[#8DDF22] transition" href="/">Home</a></li>
+          <li>
+            <a class="hover:text-[#8DDF22] transition" href="#projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#8DDF22] transition" href="#contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="mt-4">
+          <button
+            class="w-full bg-[#8DDF22] text-black font-semibold px-5 py-2 rounded-lg shadow hover:bg-[#76c91c] transition"
+          >
+            Contact Me
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section
+        class="max-w-[1280px] mx-auto pt-32 px-6 py-16 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <div class="flex justify-center">
+          <img
+            src="/img/naim.png"
+            alt="Engineering Design"
+            class="w-[420px] rounded-lg shadow-lg"
+          />
+        </div>
+
+        <div>
+          <h1 class="text-4xl font-bold mb-6 text-white">About Me</h1>
+          <p class="text-white leading-relaxed mb-8">
+            I am a passionate Civil Engineer with a strong background in
+            structural design and construction management. I focus on delivering
+            innovative, safe, and cost-effective engineering solutions. With
+            experience in project planning, site supervision, and technical
+            analysis, I blend technical skills with problem-solving. My work
+            aims to build resilient structures and sustainable infrastructure. I
+            strive to contribute to smart cities with high quality and
+            efficiency
+          </p>
+          <button
+            class="bg-[#8DDF22] text-black font-semibold px-6 py-3 rounded-lg shadow hover:bg-[#76c91c] transition"
+          >
+            Get Started
+          </button>
+        </div>
+      </section>
+
+      <section id="projects" class="max-w-[1280px] mx-auto px-6 py-16">
+        <!-- Section Title -->
+        <div class="mb-12 text-center">
+          <h2 class="text-4xl font-bold text-white">My Projects</h2>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Project 1 -->
+          <div class="bg-[#1f1f1f] p-4 rounded-lg shadow-lg">
+            <img
+              src="/img/img-1.jpg"
+              alt="Project 1"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <p class="text-gray-300 text-sm">
+              Civil engineers use site plans and drawings to manage the detailed
+              execution of projects. Ensuring safety and maintaining quality is
+              our primary responsibility.
+            </p>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="bg-[#1f1f1f] p-4 rounded-lg shadow-lg">
+            <img
+              src="/img/img2.jpg"
+              alt="Project 2"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <p class="text-gray-300 text-sm">
+              Civil engineers supervise infrastructure construction by leading
+              field-level workers. They play a crucial role in every step of
+              plan implementation.
+            </p>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="bg-[#1f1f1f] p-4 rounded-lg shadow-lg">
+            <img
+              src="/img/img-3.jpg"
+              alt="Project 3"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <p class="text-gray-300 text-sm">
+              Modern cities are built through civil engineering. Bridges, roads,
+              and buildings all are backed by the planning of skilled engineers.
+            </p>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="bg-[#1f1f1f] p-4 rounded-lg shadow-lg">
+            <img
+              src="/img/img-4.jpg"
+              alt="Project 4"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <p class="text-gray-300 text-sm">
+              Civil engineers do more than just construction they design
+              sustainable infrastructure for the future. Modern society is built
+              on their vision and hard work.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="min-h-screen bg-[#040507] flex items-center justify-center px-6 sm:py-16"
+      >
+        <div
+          class="max-w-[600px] w-full bg-[#1f1f1f] p-8 rounded-2xl shadow-lg"
+        >
+          <h2 class="text-3xl font-bold text-white mb-6 text-center">
+            Contact Me
+          </h2>
+
+          <form class="flex flex-col gap-6">
+            <!-- Name -->
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="w-full px-4 py-3 rounded-lg bg-[#040507] border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-[#8DDF22]"
+            />
+
+            <!-- Email -->
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="w-full px-4 py-3 rounded-lg bg-[#040507] border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-[#8DDF22]"
+            />
+
+            <textarea
+              rows="5"
+              placeholder="Your Message"
+              class="w-full px-4 py-3 rounded-lg bg-[#040507] border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-[#8DDF22]"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="bg-[#8DDF22] text-black font-semibold px-6 py-3 rounded-lg shadow hover:bg-[#76c91c] transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#040507] text-white py-6">
+      <div class="max-w-[1280px] mx-auto px-6 text-center">
+        <p class="text-sm">&copy; 2025 Naim Hossain. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/app.js"></script>
+  </body>
+</html>
